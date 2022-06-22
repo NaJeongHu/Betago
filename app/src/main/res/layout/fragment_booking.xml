@@ -1,14 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragment.BookFragment">
+    android:background="#F5F5F5"
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="464dp"
+        android:src="@drawable/reservation_back"/>
 
-</FrameLayout>
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_menu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여행을\n떠나볼까요"
+        android:textSize="48dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="186dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/cardview_login_underinfo"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/custom_main_cardview_shape2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="372dp"
+            android:layout_height="44dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            app:cardBackgroundColor="#D9D9D9">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="194dp"
+                android:layout_height="44dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="#0049FF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="편도행"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="왕복행"
+                android:layout_gravity="right"
+                android:layout_marginRight="67dp"
+                android:textColor="#9898A0"
+                android:textSize="16dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="82dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="132dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#E6F0FE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발지"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#9898A0"
+                android:textStyle="bold"
+                android:textSize="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="82dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="262dp"
+            android:layout_marginTop="132dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#FEEFF0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도착지"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#9898A0"
+                android:textStyle="bold"
+                android:textSize="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginLeft="189dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/icon_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인천"
+            android:layout_marginTop="167dp"
+            android:layout_marginLeft="75dp"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:height="53dp"
+            android:textStyle="bold"
+            android:textColor="#191F28"
+            android:textSize="36dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제주도"
+            android:layout_marginTop="167dp"
+            android:layout_marginLeft="253dp"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:height="53dp"
+            android:textStyle="bold"
+            android:textColor="#191F28"
+            android:textSize="36dp"/>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="290dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/custom_main_cardview_logined_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="조회하기"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
