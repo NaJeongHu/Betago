@@ -40,7 +40,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="18dp"
         android:layout_marginTop="186dp"
-        android:textColor="@color/white"/>
+        android:textColor="#BBFFFFFF"/>
 
     <RelativeLayout
         android:id="@+id/cardview_login_underinfo"

@@ -59,7 +59,9 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/ll_pay"
         android:layout_below="@+id/appbar"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -151,7 +153,8 @@
                 android:textSize="36dp"/>
 
             <LinearLayout
-                android:visibility="gone"
+                android:id="@+id/ll_date"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -199,6 +202,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:id="@+id/ll_calendar"
                     android:layout_width="match_parent"
                     android:layout_height="370dp"
@@ -307,7 +311,7 @@
                             android:id="@+id/tv_people_adult"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2"
+                            android:text="0"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -319,6 +323,7 @@
 
 
                         <ImageView
+                            android:id="@+id/iv_plus_adult"
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             app:layout_constraintTop_toTopOf="parent"
@@ -464,7 +469,7 @@
                             android:id="@+id/tv_people_grand"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="2"
+                            android:text="0"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -476,6 +481,7 @@
 
 
                         <ImageView
+                            android:id="@+id/iv_plus_grand"
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             app:layout_constraintTop_toTopOf="parent"
@@ -588,7 +594,7 @@
 
             <LinearLayout
                 android:id="@+id/ll_ship"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -642,6 +648,7 @@
                     android:orientation="vertical">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_first"
                         android:layout_width="match_parent"
                         android:layout_height="55dp">
 
@@ -823,7 +830,7 @@
                         android:layout_marginLeft="65dp"/>
 
                     <ImageView
-                        android:id="@+id/iv_car"
+                        android:id="@+id/iv_arrow4"
                         android:layout_width="17dp"
                         android:layout_height="9dp"
                         app:layout_constraintTop_toTopOf="parent"
@@ -834,7 +841,136 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <LinearLayout
+                    android:id="@+id/ll_car_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:orientation="vertical">
 
+                    <RelativeLayout
+                        android:layout_width="319dp"
+                        android:layout_height="140dp"
+                        android:elevation="10dp"
+                        android:background="@drawable/custom_search_cardview"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="포르쉐 타이칸"
+                            android:textColor="#0049FF"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="14dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123바 4567"
+                            android:textColor="#191F28"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="55dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="배타고 님"
+                            android:textColor="#191F28"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="94dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <ImageView
+                            android:id="@+id/iv_turnon"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_off"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="260dp"/>
+
+                        <ImageView
+                            android:layout_width="159dp"
+                            android:layout_height="115dp"
+                            android:layout_marginLeft="160dp"
+                            android:layout_marginTop="40dp"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/tican"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="319dp"
+                        android:layout_height="140dp"
+                        android:elevation="10dp"
+                        android:background="@drawable/custom_search_cardview"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="기아 카니발4"
+                            android:textColor="#0049FF"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="14dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111바 1004"
+                            android:textColor="#191F28"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="55dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="배타고 님"
+                            android:textColor="#191F28"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginTop="94dp"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"/>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/icon_off"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="260dp"/>
+
+                        <ImageView
+                            android:layout_width="230dp"
+                            android:layout_height="106dp"
+                            android:layout_marginLeft="172dp"
+                            android:layout_marginTop="32dp"
+                            android:scaleType="center"
+                            android:src="@drawable/carnibal"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -843,6 +979,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
+        android:id="@+id/ll_pay"
         android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="60dp"

@@ -7,69 +7,179 @@
     android:background="#FFFFFF"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-        app:elevation="0dp"
-        android:background="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_search_cardview"
+        android:elevation="10dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="fill_parent"
-            android:backgroundTint="#FFFFFF"
-            android:layout_height="80dp"
-            app:layout_scrollFlags="enterAlways">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search_icon"/>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="65dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="어디로 떠나볼까요?"
+            android:textColor="#191F28"
+            android:textSize="14dp"/>
 
-                <ImageView
-                    android:id="@+id/btn_list_back"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_width="25dp"
-                    android:layout_height="20dp"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/icon_back" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="10dp">
 
-                <TextView
-                    android:id="@+id/tv_list_title"
-                    android:text="편도행"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/location"/>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="79dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/custom_reservation_cardview_shape2"
+        android:orientation="vertical">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_below="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관광지"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textSize="14dp"
+            android:textColor="#0049FF"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    </LinearLayout>
 
-        </LinearLayout>
+    <TextView
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="139dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="맛집"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textSize="14dp"
+        android:textColor="#9898A0"/>
 
-    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="205dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숙박"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textSize="14dp"
+        android:textColor="#9898A0"/>
+
+    <TextView
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="271dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="엑티비티"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textSize="14dp"
+        android:textColor="#9898A0"/>
+
+    <TextView
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="363dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="축제"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textSize="14dp"
+        android:textColor="#9898A0"/>
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="205dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="162dp"
+        android:background="@drawable/pic1"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="381dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="성산일출봉"
+        android:textColor="#191F28"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="417dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="일출봉 정상에는 지름 600m, 바닥면의 높이 해발 90m에 면적이 214,400㎡ 나 되는 분화구가 자리한다."
+        android:textColor="#9898A0"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="205dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="498dp"
+        android:background="@drawable/pic2"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="717dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="천지연폭포"
+        android:textColor="#191F28"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="753dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="일출봉 정상에는 지름 600m, 바닥면의 높이 해발 90m에 면적이 214,400㎡ 나 되는 분화구가 자리한다."
+        android:textColor="#9898A0"
+        android:textSize="14dp"/>
 
 </RelativeLayout>

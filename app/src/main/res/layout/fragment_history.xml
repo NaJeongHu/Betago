@@ -43,10 +43,148 @@
             <ImageView
                 android:layout_width="370dp"
                 android:layout_height="680dp"
+                android:padding="12dp"
                 android:layout_marginTop="6dp"
                 android:scaleType="centerCrop"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/ticket_image"/>
+                android:src="@drawable/ticket_image_1"/>
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="141dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tic_car"/>
+
+            <RelativeLayout
+                android:layout_width="370dp"
+                android:layout_height="407dp"
+                android:layout_marginLeft="21dp"
+                android:padding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/custom_histo">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/icon_x" />
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="14dp"
+                        android:src="@drawable/icon_mol" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="58dp"
+                        android:layout_marginTop="290dp"
+                        android:src="@drawable/icon_mol_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="89dp"
+                        android:layout_marginTop="288dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="시간안에 도착할 가능성이 낮습니다"
+                        android:textColor="#BE5E62"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="333dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/custom_main_cardview_logined_shape"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:text="빠른 환불하기"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="182dp"
+                        android:layout_height="182dp"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="62dp"
+                        android:src="@drawable/outer3" />
+
+                    <ImageView
+                        android:layout_width="182dp"
+                        android:layout_height="182dp"
+                        android:layout_marginLeft="82dp"
+                        android:layout_marginTop="62dp"
+                        android:src="@drawable/outer2" />
+
+                    <ImageView
+                        android:layout_width="224dp"
+                        android:layout_height="224dp"
+                        android:layout_marginLeft="61dp"
+                        android:layout_marginTop="41dp"
+                        android:src="@drawable/outer1" />
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="171dp"
+                        android:layout_marginTop="70dp"
+                        android:scaleType="center"
+                        android:src="@drawable/outer4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="135dp"
+                        android:layout_marginTop="128dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="00:23"
+                        android:textColor="#0049FF"
+                        android:textSize="28dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="143dp"
+                        android:layout_marginTop="177dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"
+                        android:text="선착장까지"
+                        android:textColor="#9898A0"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
 

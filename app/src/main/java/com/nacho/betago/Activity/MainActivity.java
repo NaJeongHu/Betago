@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         setTabLayout();
         setViewPager();
+
     }
     @TargetApi(Build.VERSION_CODES.N)
     private void setTabLayout(){

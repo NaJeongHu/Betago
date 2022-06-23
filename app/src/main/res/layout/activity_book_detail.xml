@@ -77,6 +77,8 @@
             android:layout_height="67dp">
 
             <LinearLayout
+                android:id="@+id/ll_1"
+                android:orientation="vertical"
                 android:layout_width="60dp"
                 android:layout_height="67dp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -85,6 +87,8 @@
                 android:background="@drawable/gray1"/>
 
             <LinearLayout
+                android:id="@+id/ll_2"
+                android:orientation="vertical"
                 android:layout_width="60dp"
                 android:layout_height="67dp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -102,6 +106,8 @@
                 android:background="@drawable/gray8"/>
 
             <LinearLayout
+                android:id="@+id/ll_7"
+                android:orientation="vertical"
                 android:layout_width="60dp"
                 android:layout_height="67dp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -165,6 +171,8 @@
                 android:background="@drawable/gray5"/>
 
             <LinearLayout
+                android:id="@+id/ll_6"
+                android:orientation="vertical"
                 android:layout_width="60dp"
                 android:layout_height="67dp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -231,6 +239,7 @@
             android:textSize="14dp"/>
 
         <TextView
+            android:id="@+id/tv_seat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -244,9 +253,10 @@
             android:textSize="20dp"/>
 
         <LinearLayout
+            android:id="@+id/ll_pick"
             android:layout_width="146dp"
             android:layout_height="60dp"
-            android:background="@drawable/custom_main_cardview_logined_shape"
+            android:background="@drawable/custom_main_cardview_login_shape"
             android:layout_marginLeft="247dp"
             android:gravity="center"
             android:layout_marginTop="30dp">
