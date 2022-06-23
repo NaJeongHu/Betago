@@ -41,6 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="여행을 떠나볼까요?"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
@@ -107,6 +109,8 @@
                     android:layout_height="wrap_content"
                     android:text="로그인하기"
                     android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
                     android:textStyle="bold"
                     android:textColor="@color/white"/>
 
@@ -119,6 +123,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/ll_login"
                 android:text="ID / 비밀번호 찾기"
                 android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
                 android:textSize="14sp"/>
 
             <TextView
@@ -128,6 +134,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/ll_login"
                 android:text="회원가입하기"
                 android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
                 android:textStyle="bold"
                 android:textSize="14sp"/>
             
@@ -200,6 +208,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="페이스북"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
                     android:textSize="12sp"
                     android:gravity="center"/>
 
@@ -232,6 +242,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="카카오톡"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
                     android:textSize="12sp"
                     android:gravity="center"/>
 
@@ -265,6 +277,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="구글"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
                     android:textSize="12sp"
                     android:gravity="center"/>
 

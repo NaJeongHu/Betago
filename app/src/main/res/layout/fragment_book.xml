@@ -167,6 +167,7 @@
             android:textSize="36dp"/>
 
         <LinearLayout
+            android:id="@+id/ll_gobook"
             android:visibility="visible"
             android:layout_width="match_parent"
             android:layout_height="60dp"
