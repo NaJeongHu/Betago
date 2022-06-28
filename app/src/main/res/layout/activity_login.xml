@@ -16,10 +16,10 @@
 
         <ImageView
             android:layout_width="146dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="54dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="34dp"
             android:id="@+id/iv_logo"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/betang_logo"/>
 
     </LinearLayout>
 

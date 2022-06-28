@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logogo"
+        android:icon="@drawable/logo_cir"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_cir"
         android:supportsRtl="true"
         android:theme="@style/Theme.Betago">
         <activity android:name=".Activity.PayActivity"></activity>
