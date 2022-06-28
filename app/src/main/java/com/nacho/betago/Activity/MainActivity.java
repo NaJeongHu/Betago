@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setViewPager();
 
     }
+
     @TargetApi(Build.VERSION_CODES.N)
     private void setTabLayout(){
 
@@ -48,10 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Tab 아이콘 설정
         tabLayout.getTabAt(0).setIcon(R.drawable.reservation_work);
+        tabLayout.getTabAt(0).setText("예매");
         tabLayout.getTabAt(1).setIcon(R.drawable.place);
+        tabLayout.getTabAt(1).setText("둘러보기");
         tabLayout.getTabAt(2).setIcon(R.drawable.ticket);
+        tabLayout.getTabAt(2).setText("승선권");
         tabLayout.getTabAt(3).setIcon(R.drawable.notification);
+        tabLayout.getTabAt(3).setText("알림");
         tabLayout.getTabAt(4).setIcon(R.drawable.mypage);
+        tabLayout.getTabAt(4).setText("내 정보");
 
         //Tab 아이콘 색상 초기화 (맨 처음 화면일때의 Tab 아이콘 색상 설정)
         tabLayout.getTabAt(0).getIcon().setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_IN);

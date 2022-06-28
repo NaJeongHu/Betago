@@ -31,6 +31,8 @@ public class BookActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
 
+        // todo :
+
         cl_first = findViewById(R.id.cl_first);
         cl_first.setOnClickListener(this);
         ll_calendar = findViewById(R.id.ll_calendar);
